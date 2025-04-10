@@ -9,9 +9,26 @@
 <body>
   <div id="container">
     <div id="result-container">
-      <span id="random-number">Click the button</span>
+      <span id="random-number">0</span>
     </div>
-    <button id="generate-button">Random Number</button>
+    
+    <button id="generate-button">Roll Number</button>
+    
+    <div id="options-container">
+      <div class="range-inputs">
+        <input type="number" id="min-value" placeholder="Min" value="1">
+        <input type="number" id="max-value" placeholder="Max" value="100">
+      </div>
+      
+      <div class="toggle-container">
+        <input type="checkbox" id="show-history">
+        <label for="show-history">Show Roll History</label>
+      </div>
+      
+      <div id="history-container" style="display: none;">
+        <div class="history-list"></div>
+      </div>
+    </div>
   </div>
   <script src="popup.js"></script>
 </body>
